@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration Form</title>
+    <link rel="stylesheet" href="registrat.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Course Registration Form</h2>
+        <form name="courseRegistrationForm" onsubmit="return validateForm()" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" name="middleName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="month">Birth Date:</label>
+                <select id="month" name="month" required>
+                   
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+
+                </select>
+                <select id="day" name="day" required>
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+                </select>
+                <select id="year" name="year" required>
+                    
+                    <option value="2000">1999</option>
+                <option value="2000">2000</option>
+                <option value="2000">2001</option>
+                <option value="2000">2002</option>
+                <option value="2000">2003</option>
+                <option value="2000">2004</option>
+                <option value="2000">2005</option>
+                <option value="2000">2006</option>
+                <option value="2000">2008</option>
+                <option value="2000">2009</option>
+                <option value="2000">2010</option>
+                <option value="2000">2011</option>
+                <option value="2000">2012</option>
+                <option value="2000">2013</option>
+                <option value="2000">2014</option>
+                <option value="2000">2015</option>
+                <option value="2000">2016</option>
+                <option value="2000">2017</option>
+                <option value="2000">2018</option>
+                <option value="2000">2019</option>
+                <option value="2000">2020</option>
+                <option value="2000">2021</option>
+                <option value="2000">2022</option>
+                <option value="2000">2023</option>
+                <option value="2000">2024</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="streetAddress">Street Address:</label>
+                <input type="text" id="streetAddress" name="streetAddress" required>
+            </div>
+            <!-- Include other address fields similarly -->
+            <div class="form-group">
+                <label for="studentEmail">Student Email:</label>
+                <input type="email" id="studentEmail" name="studentEmail" required>
+            </div>
+            <!-- Include other input fields similarly -->
+            <div class="form-group">
+                <label for="additionalComment">Additional Comment:</label>
+                <textarea id="additionalComment" name="additionalComment"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
